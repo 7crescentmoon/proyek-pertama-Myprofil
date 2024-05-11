@@ -1,0 +1,301 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+.home {
+    position: relative;
+    height: 100vh;
+    min-width: 100%;
+    background-color: rgba(229, 229, 247, 0.5);
+    background-image: radial-gradient(circle at center center, rgba(7, 15, 43, 0.5), rgba(229, 229, 247, 0.1)), repeating-radial-gradient(circle at center center, rgba(7, 15, 43, 0.1), rgba(7, 15, 43, 0.1) 20px, transparent 20px, transparent 30px);
+    background-blend-mode: multiply;
+}
+
+
+.navbar {
+    width: 20vw;
+    height: 5vh;
+    background-color: #eeeeee;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: auto;
+    border-radius: 30px;
+    position: fixed;
+    top: 4%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    gap: 1rem;
+    z-index: 999;
+
+}
+
+.navbar ul {
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar ul li {
+    list-style: none;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    color: rgb(7, 15, 43);
+}
+
+.programming-language{
+    width: 50%;
+    height: 70%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+
+}
+
+.programming-language .logo img {
+    width: 60px;
+    height: 60px;
+    opacity: 80%;
+}
+
+.programming-language .html {
+    position: relative;
+    bottom: -5rem;
+    left: -5rem;
+}
+
+.programming-language .css {
+    position: relative;
+    bottom: -10%;
+    left: -3rem;
+    top: .5rem;
+}
+
+.programming-language .js {
+    position: relative;
+    bottom: -10%;
+    right: -3rem;
+    top: .5rem;
+}
+
+.programming-language .node-js {
+    position: relative;
+    bottom: -5rem;
+    right: -5rem;
+}
+
+.home .text {
+    width: 50vw;
+    height: 50vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25rem;
+
+}
+
+.home .text .text-1 {
+    width: 100%;
+    font-size: 3rem;
+    font-family: "Montserrat", sans-serif;
+    font-style: italic;
+    font-weight: 300;
+    color: rgb(248, 248, 248);
+    text-align: right;
+}
+
+.home .text .text-2 {
+    width: 100%;
+    font-size: 3rem;
+    font-family: "Montserrat", sans-serif;
+    font-style: italic;
+    font-weight: 300;
+    color: rgb(248, 248, 248);
+    text-align: left;
+}
+
+.home .circle {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: rgba(238, 240, 247, 0.5);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.circle img {
+    width: inherit;
+    height: inherit;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid rgb(238, 240, 247);
+}
+
+.circle .social-media {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+}
+
+
+.social-media a svg {
+    width: 40px;
+    height: 40px;
+    padding: .5rem;
+    background-color: #eeeeee;
+    border-radius: 50%;
+}
+
+
+.social-media .icon-ins {
+    position: absolute;
+    left: 0;
+    bottom: -2rem;
+    transform: scale();
+}
+
+.social-media .icon-github {
+    position: absolute;
+    bottom: -5rem;
+    bottom: -5rem;
+    transform: scale(1);
+}
+
+.social-media .icon-tiktok {
+    position: absolute;
+    right: 0;
+    bottom: -2rem;
+
+    transform: scale(1);
+}
+
+.social-media .icon-ins:hover,
+.social-media .icon-github:hover,
+.social-media .icon-tiktok:hover {
+    transform: scale(1.1);
+    transition: all .3s;
+}
+
+.about-me {
+    height: 60vh;
+    min-width: 100%;
+    background: rgba(146, 149, 165, 0.1);
+    position: relative;
+}
+
+.about-me .title h2{
+    width: 20vw;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: rgb(27, 27, 27);
+    text-align: center;
+    background-color: #eeeeee;
+    margin: auto;
+    border-radius: 30px;
+    padding: 0.5rem;
+    position: relative; /* Menjadikan .title sebagai konteks posisi */
+    top: 3.5rem; /* Menggeser judul ke bawah */
+}
+
+.about-me .content {
+    width: 60%;
+    position: relative;
+    margin: 5rem auto;
+}
+
+.about-me .content p {
+   
+    font-family: "Montserrat", sans-serif;
+    color: rgb(27, 27, 27);
+    text-align: left;
+    padding: 1rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+}
+
+.contact {
+    background: rgba(146, 149, 165, 0.1);
+    font-family: "Montserrat", sans-serif;
+    
+}
+
+.contact .container {
+    position: relative;
+    max-width: 600px;
+    margin:auto;
+}
+
+.contact .container h2{
+    text-align: center;
+    color: rgb(27, 27, 27);
+    background-color: #eeeeee;
+    width: 20vw;
+    margin: auto;
+    border-radius: 30px;
+    padding: 0.5rem;
+    font-weight: 500;
+}
+.contact form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 1rem;
+}
+
+.contact .form-group {
+    margin-bottom: 20px;
+}
+
+.contact label {
+    font-weight: 500;
+}
+
+.contact input[type="text"],
+.contact input[type="email"],
+.contact textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.contact textarea {
+    resize: vertical;
+}
+
+.contact button[type="submit"] {
+    background: rgba(146, 149, 165, 0.3);
+    color: rgb(27, 27, 27);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+}
+
+.contact button[type="submit"]:hover {
+    background: rgba(146, 149, 165, 0.1);
+}
